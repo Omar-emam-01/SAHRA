@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>SAHRA | Home</title>
+</head>
+
+<body>
+    <header>
+        <a href="./index.html" class="logo-container">
+            <img src="../img/logo.png" alt="SAHRA Logo" class="logo-img" />
+        </a>
+
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search..." onkeyup="searchMovies()">
+            <ion-icon name="search-outline"></ion-icon>
+        </div>
+
+        <nav class="navigation">
+            <button class="btnHome-popup">Home</button>
+            <a href="../About/index.html">About</a>
+            <a href="../Services/index.html">Services</a>
+            <a href="../Contact/index.html">Contact</a>
+            <a href="../Login & Registration/index.html">Login</a>
+        </nav>
+    </header>
+
+    <div class="wrapper-home">
+        <span class="icon-close"><ion-icon name="close-outline"></ion-icon></span>
+
+        <button class="scroll-btn left" onclick="scrollSlider(-1)">❮</button>
+        <button class="scroll-btn right" onclick="scrollSlider(1)">❯</button>
+
+        <div class="movies-container">
+            <div class="movie-card" data-type="series" data-title="Stranger Things" data-season="0"
+                onclick="redirectMe(this)">
+                <a href="#">
+                    <img src="../img/st1.jpg" alt="Stranger Things" />
+                </a>
+                <div class="movie-info">
+                    <h3>Stranger Things 1</h3>
+                </div>
+            </div>
+            <div class="movie-card" data-type="series" data-title="Stranger Things" data-season="1"
+                onclick="redirectMe(this)">
+                <a href="#">
+                    <img src="../img/st2.jpg" alt="Stranger Things" />
+                </a>
+                <div class="movie-info">
+                    <h3>Stranger Things 2</h3>
+                </div>
+            </div>
+            <div class="movie-card" data-type="movie" data-title="Shazam" onclick="redirectMe(this)">
+                <a href="#">
+                    <img src="../img/shazam.png" alt="Shazam" />
+                </a>
+                <div class="movie-info">
+                    <h3>Shazam</h3>
+                </div>
+            </div>
+            <div class="movie-card" data-type="series" data-title="Stranger Things" data-season="2"
+                onclick="redirectMe(this)">
+                <a href="#">
+                    <img src="../img/st3.png" alt="Stranger Things" />
+                </a>
+                <div class="movie-info">
+                    <h3>Stranger Things 3</h3>
+                </div>
+            </div>
+            <div class="movie-card" data-type="movie" data-title="Less Baghdad" onclick="redirectMe(this)">
+                <a href="#">
+                    <img src="../img/ls.jpg" alt="لص بغداد" />
+                </a>
+                <div class="movie-info">
+                    <h3>Less Baghdad</h3>
+                </div>
+            </div>
+            <div class="movie-card" data-type="series" data-title="Stranger Things" data-season="3"
+                onclick="redirectMe(this)">
+                <a href="#">
+                    <img src="../img/st4.jpg" alt="Stranger Things" />
+                </a>
+                <div class="movie-info">
+                    <h3>Stranger Things 4</h3>
+                </div>
+            </div>
+            <div class="movie-card" data-type="movie" data-title="El Mamarr" onclick="redirectMe(this)">
+                <a href="#">
+                    <img src="../img/el.jpg" alt="El Mamarr " />
+                </a>
+                <div class="movie-info">
+                    <h3>El Mamarr</h3>
+                </div>
+            </div>
+            <div class="movie-card" data-type="series" data-title="prison break" data-season="0"
+                onclick="redirectMe(this)">
+                <a href="#">
+                    <img src="../img/ps1.jpg" alt="prison break" />
+                </a>
+                <div class="movie-info">
+                    <h3>prison break 1</h3>
+                </div>
+            </div>
+            <div class="movie-card" data-type="movie" data-title="avengers endgame" onclick="redirectMe(this)">
+                <a href="#">
+                    <img src="../img/avegame.jpg" alt="avengers endgame" />
+                </a>
+                <div class="movie-info">
+                    <h3>avengers endgame</h3>
+                </div>
+            </div>
+            <div class="movie-card" data-type="movie" data-title="Batman V Superman Dawn Of Justice"
+                onclick="redirectMe(this)">
+                <a href="#">
+                    <img src="../img/b v s.jpg" alt="Batman V Superman Dawn Of Justice" />
+                </a>
+                <div class="movie-info">
+                    <h3>Batman V Superman Dawn Of Justice</h3>
+                </div>
+            </div>
+            <div class="movie-card" data-type="series" data-title="prison break" data-season="1"
+                onclick="redirectMe(this)">
+                <a href="#">
+                    <img src="../img/ps2.jpg" alt="prison break" />
+                </a>
+                <div class="movie-info">
+                    <h3>prison break 2</h3>
+                </div>
+            </div>
+            <div class="movie-card" data-type="series" data-title="prison break" data-season="2"
+                onclick="redirectMe(this)">
+                <a href="#">
+                    <img src="../img/ps3.jpg" alt="prison break" />
+                </a>
+                <div class="movie-info">
+                    <h3>prison break 3</h3>
+                </div>
+            </div>
+            <div class="movie-card" data-type="movie" data-title="Avengers infinity war"
+                onclick="redirectMe(this)">
+                <a href="#">
+                    <img src="../img/avewar.jpg" alt="Avengers infinity war" />
+                </a>
+                <div class="movie-info">
+                    <h3>Avengers infinity war</h3>
+                </div>
+            </div>
+            <div class="movie-card" data-type="movie" data-title="captain marvel"
+                onclick="redirectMe(this)">
+                <a href="#">
+                    <img src="../img/ca.jpg" alt="captain marvel" />
+                </a>
+                <div class="movie-info">
+                    <h3>captain marvel</h3>
+                </div>
+            </div>
+            <div class="movie-card" data-type="movie" data-title="fast  and furious 6"
+                onclick="redirectMe(this)">
+                <a href="#">
+                    <img src="../img/fs6.jpg" alt="fast  and furious 6" />
+                </a>
+                <div class="movie-info">
+                    <h3>fast  and furious 6</h3>
+                </div>
+            </div>
+            <div class="movie-card" data-type="movie" data-title="fast  and furious 7"
+                onclick="redirectMe(this)">
+                <a href="#">
+                    <img src="../img/fs7.jpg" alt="fast  and furious 7" />
+                </a>
+                <div class="movie-info">
+                    <h3>fast  and furious 7</h3>
+                </div>
+            </div>
+            <div class="movie-card" data-type="movie" data-title="Mohamed Hussein"
+                onclick="redirectMe(this)">
+                <a href="#">
+                    <img src="../img/mh.jpg" alt="Mohamed Hussein" />
+                </a>
+                <div class="movie-info">
+                    <h3>Mohamed Hussein</h3>
+                </div>
+            </div>
+            <div class="movie-card" data-type="series" data-title="prison break" data-season="3"
+                onclick="redirectMe(this)">
+                <a href="#">
+                    <img src="../img/ps4.jpg" alt="prison break" />
+                </a>
+                <div class="movie-info">
+                    <h3>prison break 4</h3>
+                </div>
+            </div>
+            <div class="movie-card" data-type="movie" data-title="Scoob"
+                onclick="redirectMe(this)">
+                <a href="#">
+                    <img src="../img/scoob.jpg" alt="Scoob" />
+                </a>
+                <div class="movie-info">
+                    <h3>Scoob</h3>
+                </div>
+            </div>
+            <div class="movie-card" data-type="movie" data-title="Spider Man Into The Spider Verse"
+                onclick="redirectMe(this)">
+                <a href="#">
+                    <img src="../img/spider.jpg" alt="Spider Man Into The Spider Verse" />
+                </a>
+                <div class="movie-info">
+                    <h3>Spider Man Into The Spider Verse</h3>
+                </div>
+            </div>
+            <div class="movie-card" data-type="movie" data-title="The Hunger Games Mockingjay"
+                onclick="redirectMe(this)">
+                <a href="#">
+                    <img src="../img/hunger moc.jpg" alt="The Hunger Games Mockingjay" />
+                </a>
+                <div class="movie-info">
+                    <h3>The Hunger Games Mockingjay</h3>
+                </div>
+            </div>
+            <div class="movie-card" data-type="movie" data-title="The Hunger Games The Ballad of Songbirds & Snakes"
+                onclick="redirectMe(this)">
+                <a href="#">
+                    <img src="../img/hunger snake.jpg" alt="The Hunger Games The Ballad of Songbirds & Snakes" />
+                </a>
+                <div class="movie-info">
+                    <h3>The Hunger Games The Ballad of Songbirds & Snakes</h3>
+                </div>
+            </div>
+            <div class="movie-card" data-type="movie" data-title="The Hunger Games"
+                onclick="redirectMe(this)">
+                <a href="#">
+                    <img src="../img/hunger.jpg" alt="The Hunger Games" />
+                </a>
+                <div class="movie-info">
+                    <h3>The Hunger Games</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>SAHRA | Series</title>
+</head>
+
+<body>
+    <header>
+        <a href="../Home/index.html" class="logo-container">
+            <img src="../img/logo.png" alt="SAHRA Logo" class="logo-img">
+        </a>
+        <nav class="navigation">
+            <button class="btndisplay-popup">Display</button>
+            <a href="../Home/index.html">Back</a>
+        </nav>
+    </header>
+
+    <div class="wrapper">
+        <span class="icon-close"><ion-icon name="close-outline"></ion-icon></span>
+
+        <div class="content-display">
+            <h1 id="media-title">Loading...</h1>
+            <div class="poster-container">
+                <img id="media-poster" src="" alt="Series Poster">
+            </div>
+            <div class="description-container">
+                <p id="media-description">جاري تحميل الملخص...</p>
+            </div>
+        </div>
+
+        <div class="episodes-area">
+            <div id="trailer-container" class="trailer-wrapper"></div>
+
+            <div class="selection-zone">
+                <h4>المواسم</h4>
+                <div id="seasons-container" class="seasons-list"></div>
+
+                <h4>الحلقات</h4>
+                <div id="episodes-container" class="episodes-list">
+                    <p style="color: #666; font-size: 0.8rem;">اختر موسماً لعرض الحلقات</p>
+                </div>
+            </div>
+            <div class="video-display-zone">
+                <h4 id="now-playing">مشاهدة الآن: اختر حلقة</h4>
+                <div class="video-container">
+                    <video id="main-video-player" controls>
+                        <source src="" type="video/mp4">
+                        متصفحك لا يدعم تشغيل الفيديو.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
