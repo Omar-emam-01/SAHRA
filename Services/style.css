@@ -139,7 +139,6 @@ header {
     z-index: 1;
 }
 
-/* تنسيق الحاوية الأساسية للبطاقات */
 .pricing-container {
     display: flex;
     justify-content: center;
@@ -167,7 +166,6 @@ header {
     background: rgba(255, 255, 255, 0.1);
 }
 
-/* تمييز البطاقة السنوية */
 .pricing-card.popular {
     border: 2px solid #0084ff;
     transform: scale(1.05);
@@ -208,7 +206,7 @@ header {
 
 .pricing-card ul {
     list-style: none;
-    text-align: right; /* عشان الكلام بالعربي */
+    text-align: right;
     margin-bottom: 30px;
 }
 

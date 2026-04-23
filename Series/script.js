@@ -218,28 +218,23 @@ function loadMediaData() {
             seasonsDiv.appendChild(card);
         });
 
-        // تفريغ قائمة الحلقات
         episodesDiv.innerHTML = "";
 
         currentSeason.episodes.forEach(ep => {
             const a = document.createElement('a');
             a.className = 'episode-item';
-            a.href = "javascript:void(0)"; // منع الرابط من فتح صفحة جديدة
+            a.href = "javascript:void(0)";
             a.innerText = ep.title;
 
-            // عند الضغط على الحلقة
             a.onclick = () => {
                 const videoPlayer = document.getElementById('main-video-player');
                 const playingTitle = document.getElementById('now-playing');
 
-                // تحديث عنوان الحلقة المشغلة
                 playingTitle.innerText = `مشاهدة الآن: ${mediaName} - ${currentSeason.name} - ${ep.title}`;
 
-                // تغيير مسار الفيديو وتشغيله
                 videoPlayer.src = ep.path;
                 videoPlayer.play();
 
-                // تمرير الصفحة تلقائياً للمشغل (Optional)
                 videoPlayer.scrollIntoView({ behavior: 'smooth' });
             };
 
