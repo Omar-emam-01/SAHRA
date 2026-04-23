@@ -138,3 +138,105 @@ header {
     cursor: pointer;
     z-index: 1;
 }
+
+/* تنسيق الحاوية الأساسية للبطاقات */
+.pricing-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+    width: 100%;
+}
+
+.pricing-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(0, 132, 255, 0.3);
+    padding: 40px 30px;
+    border-radius: 15px;
+    color: #fff;
+    text-align: center;
+    width: 320px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    position: relative;
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+    border-color: #0084ff;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* تمييز البطاقة السنوية */
+.pricing-card.popular {
+    border: 2px solid #0084ff;
+    transform: scale(1.05);
+}
+
+.pricing-card.popular:hover {
+    transform: scale(1.08) translateY(-10px);
+}
+
+.badge {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #0084ff;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.8em;
+    font-weight: 600;
+}
+
+.pricing-card h3 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.price {
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #0084ff;
+}
+
+.price span {
+    font-size: 0.4em;
+    color: #ccc;
+}
+
+.pricing-card ul {
+    list-style: none;
+    text-align: right; /* عشان الكلام بالعربي */
+    margin-bottom: 30px;
+}
+
+.pricing-card ul li {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.9em;
+}
+
+.pricing-card ul li ion-icon {
+    color: #0084ff;
+}
+
+.btn-buy {
+    width: 100%;
+    padding: 12px;
+    background: transparent;
+    border: 2px solid #0084ff;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-buy:hover {
+    background: #0084ff;
+    box-shadow: 0 0 15px #0084ff;
+}
