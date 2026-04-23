@@ -192,6 +192,32 @@ const params = new URLSearchParams(window.location.search);
 const mediaName = params.get('name');
 let currentSeasonIndex = parseInt(params.get('season')) || 0;
 
+window.onload = () => {
+    const transitionLayer = document.querySelector('.transition-layer');
+    
+    setTimeout(() => {
+        transitionLayer.classList.add('active-in');
+    }, 100);
+
+    const links = document.querySelectorAll('a');
+
+    links.forEach(link => {
+        link.addEventListener('click', e => {
+            if (link.hostname === window.location.hostname && !link.href.includes('#')) {
+                e.preventDefault();
+                let target = link.href;
+
+                transitionLayer.classList.remove('active-in');
+                transitionLayer.classList.add('active-out');
+
+                setTimeout(() => {
+                    window.location.href = target;
+                }, 600);
+            }
+        });
+    });
+};
+
 function loadMediaData() {
     if (mediaName && database[mediaName]) {
         const series = database[mediaName];
