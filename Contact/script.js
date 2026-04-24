@@ -44,6 +44,7 @@ const displayName = document.getElementById('display-name');
 const displayAge = document.getElementById('display-age');
 const displayInsta = document.getElementById('display-insta');
 const displayEmail = document.getElementById('display-email');
+const displayJob = document.getElementById('display-job');
 
 devItems.forEach(item => {
     item.addEventListener('click', () => {
@@ -55,10 +56,12 @@ devItems.forEach(item => {
         const insta = item.getAttribute('data-insta');
         const email = item.getAttribute('data-email');
         const img = item.getAttribute('data-img');
+        const job = item.getAttribute('data-job');
 
         displayImg.src = img;
         displayName.innerText = name;
         displayAge.innerText = age;
+        displayJob.innerText = job;
         displayInsta.href = insta;
         displayEmail.href = `mailto:${email}`;
 
